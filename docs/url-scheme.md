@@ -2,7 +2,7 @@
 
 [← 返回首页](../README.md) · [English](url-scheme.en.md)
 
-易能签支持通过 `enq-app://` 从网页、快捷指令或其他 App 发起指定操作。当前可用于添加软件源、下载资源、回传 UDID，以及一键导入签名证书。
+易能签支持通过 `enq-app://` 从网页、快捷指令或其他 App 发起指定操作。当前公开用于添加软件源、下载资源和一键导入签名证书。
 
 > App 内也能查看示例：**设置 → 关于我们 → URL Scheme**。
 
@@ -14,7 +14,6 @@
 | --- | --- | --- |
 | 添加软件源 | `enq-app://source/[软件源地址]` | 从源网站一键订阅 |
 | 下载资源 | `enq-app://install/[资源地址]` | 把 IPA / TIPA 交给易能签下载 |
-| 回传 UDID | `enq-app://udid/[UDID]` | 获取 UDID 描述文件安装后的系统回调 |
 | 导入证书 | `enq-app://import-certificate?...` | 从证书服务页面一键导入 |
 
 URL Scheme 需要在已安装易能签的 iPhone 或 iPad 上打开。网页中必须由用户点击按钮或链接触发，页面加载后自动跳转可能会被 iOS 或浏览器拦截。
@@ -134,7 +133,7 @@ document.querySelector("#import-certificate").addEventListener("click", () => {
 - 下载地址使用一次性令牌和较短有效期，用完后立即失效
 - 使用 HTTPS，并返回正确的文件名与扩展名
 - 远程文件应小于 8 MB；内嵌 Base64 解码后应小于 4 MB
-- 不要把证书、密码、UDID 或完整导入链接写入公开日志
+- 不要把证书、密码或完整导入链接写入公开日志
 
 ### 常见问题
 
@@ -145,16 +144,6 @@ document.querySelector("#import-certificate").addEventListener("click", () => {
 | 下载失败 | HTTPS 地址是否仍有效，是否返回 2xx，临时链接是否过期 |
 | 找不到证书文件 | ZIP 内是否同时包含 `.p12` 和 `.mobileprovision` |
 | 密码错误 | 确认使用的是 p12 原始密码，不要先做 Base64 |
-
----
-
-## UDID 回调
-
-```text
-enq-app://udid/[UDID]
-```
-
-该入口主要供“获取设备 UDID”描述文件流程在完成后回到易能签。普通用户应从 App 内对应入口发起，不需要手动拼接。UDID 属于设备标识，不应放进公开页面、统计链接或日志。
 
 ---
 

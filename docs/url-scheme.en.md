@@ -2,7 +2,7 @@
 
 [← Back to home](../README.en.md) · [简体中文](url-scheme.md)
 
-EnSIgn supports `enq-app://` links that start a specific action from a web page, Shortcut or another app. They can add a source, download a resource, return a UDID, or import a signing certificate in one tap.
+EnSIgn supports `enq-app://` links that start a specific action from a web page, Shortcut or another app. Its public actions can add a source, download a resource or import a signing certificate in one tap.
 
 > Examples are also available in **Settings → About → URL Scheme** inside the app.
 
@@ -14,7 +14,6 @@ EnSIgn supports `enq-app://` links that start a specific action from a web page,
 | --- | --- | --- |
 | Add a source | `enq-app://source/[source URL]` | Subscribe directly from a source website |
 | Download a resource | `enq-app://install/[resource URL]` | Hand an IPA / TIPA download to EnSIgn |
-| Return a UDID | `enq-app://udid/[UDID]` | Callback after the system installs a UDID profile |
 | Import a certificate | `enq-app://import-certificate?...` | One-tap import from a certificate service |
 
 The link must be opened on an iPhone or iPad where EnSIgn is installed. On the web, launch it from an explicit user click; iOS or the browser may block automatic redirects during page load.
@@ -134,7 +133,7 @@ Remote imports require the user to have accepted EnSIgn's privacy policy. If a p
 - Use a one-time download token with a short expiry, invalidated after use
 - Use HTTPS and return the correct filename and extension
 - Keep remote files below 8 MB and decoded inline Base64 below 4 MB
-- Never write certificates, passwords, UDIDs or complete import links to public logs
+- Never write certificates, passwords or complete import links to public logs
 
 ### Troubleshooting
 
@@ -145,16 +144,6 @@ Remote imports require the user to have accepted EnSIgn's privacy policy. If a p
 | Download fails | The HTTPS URL still works, returns 2xx and has not expired |
 | Certificate files are missing | The ZIP contains both `.p12` and `.mobileprovision` |
 | Password rejected | Use the original p12 password; do not Base64-encode it |
-
----
-
-## UDID callback
-
-```text
-enq-app://udid/[UDID]
-```
-
-This action is primarily the callback for EnSIgn's “Get device UDID” profile flow. Everyday users should start that flow inside the app rather than constructing a callback manually. A UDID is a device identifier and must not be placed on public pages, analytics links or logs.
 
 ---
 

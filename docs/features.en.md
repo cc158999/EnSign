@@ -188,7 +188,7 @@ Details and privacy boundaries: **[Auto update](auto-update.en.md)**.
 
 - **Live Activities**: signing and download progress on the Dynamic Island and Lock Screen, with quick install or sign actions when a task finishes
 - **"Open in" import**: share IPA / TIPA / ZIP / DEB / dylib / framework / p12 / provisioning profile / `.ESignCert` into EnSIgn from any app's share sheet
-- **URL scheme**: `enq-app://` supports adding sources, downloading resources, UDID callbacks and one-tap certificate import; see the [URL Scheme guide](url-scheme.en.md) for formats and examples
+- **URL scheme**: `enq-app://` supports adding sources, downloading resources and one-tap certificate import; see the [URL Scheme guide](url-scheme.en.md) for formats and examples
 - **Background execution**: registered per task and released when a task stalls — it never squats in the background
 - **OS compatibility**: iOS 16 through the latest release, with a fallback path for every newer API
 - **Self-protection**: an integrity module that only warns on an abnormal environment — it never force-quits or crashes on purpose
