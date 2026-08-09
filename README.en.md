@@ -18,7 +18,10 @@
 
 ### Join the community
 
-**[QQ Group](https://qun.qq.com/universal-share/share?ac=1&authKey=Pifbfqrq5x%2FgEZmQNlaU8DbgJyQeJga5hu9gaZTONxOIWgG7jaXr%2FMgydVWuzynv&busi_data=eyJncm91cENvZGUiOiI5NjIzMzc1MjMiLCJ0b2tlbiI6InlaUno4LzJvY2VBWXpEMVE1aXBlb082MTVlTFB1VUhlaitnQW5aYlhJaW1kM25VYUNBc0gvS0hhSFlIMGZPcEIiLCJ1aW4iOiIzMTIwNjE1NDM2In0%3D&data=0jUZUSdflWEWXWmg6l4vwK1HxgDpDhjqGumH32eKbuZ-X-ZyixgBbU4JELb-NdJwacP7EBYDP3KkQgY6Se6uhw&svctype=4&tempid=h5_group_info)** · **[QQ Channel](https://pd.qq.com/s/bceanzrgg?b=9)** · **[Telegram Channel](https://t.me/tbox_Sign)** · **[Telegram Group](https://t.me/tbox798)**
+[![Join QQ Group](https://img.shields.io/badge/QQ-Group-12B7F5?style=for-the-badge&logo=qq&logoColor=white)](https://qun.qq.com/universal-share/share?ac=1&authKey=Pifbfqrq5x%2FgEZmQNlaU8DbgJyQeJga5hu9gaZTONxOIWgG7jaXr%2FMgydVWuzynv&busi_data=eyJncm91cENvZGUiOiI5NjIzMzc1MjMiLCJ0b2tlbiI6InlaUno4LzJvY2VBWXpEMVE1aXBlb082MTVlTFB1VUhlaitnQW5aYlhJaW1kM25VYUNBc0gvS0hhSFlIMGZPcEIiLCJ1aW4iOiIzMTIwNjE1NDM2In0%3D&data=0jUZUSdflWEWXWmg6l4vwK1HxgDpDhjqGumH32eKbuZ-X-ZyixgBbU4JELb-NdJwacP7EBYDP3KkQgY6Se6uhw&svctype=4&tempid=h5_group_info)
+[![Join QQ Channel](https://img.shields.io/badge/QQ-Channel-5865F2?style=for-the-badge&logo=qq&logoColor=white)](https://pd.qq.com/s/bceanzrgg?b=9)
+[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox_Sign)
+[![Telegram Group](https://img.shields.io/badge/Telegram-Group-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox798)
 
 [Auto update](docs/auto-update.en.md) · [Features](docs/features.en.md) · [Getting started](docs/getting-started.en.md) · [FAQ](docs/faq.en.md) · [Changelog](docs/changelog.en.md)
 

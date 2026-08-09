@@ -18,7 +18,10 @@
 
 ### 加入社区
 
-**[QQ 群](https://qun.qq.com/universal-share/share?ac=1&authKey=Pifbfqrq5x%2FgEZmQNlaU8DbgJyQeJga5hu9gaZTONxOIWgG7jaXr%2FMgydVWuzynv&busi_data=eyJncm91cENvZGUiOiI5NjIzMzc1MjMiLCJ0b2tlbiI6InlaUno4LzJvY2VBWXpEMVE1aXBlb082MTVlTFB1VUhlaitnQW5aYlhJaW1kM25VYUNBc0gvS0hhSFlIMGZPcEIiLCJ1aW4iOiIzMTIwNjE1NDM2In0%3D&data=0jUZUSdflWEWXWmg6l4vwK1HxgDpDhjqGumH32eKbuZ-X-ZyixgBbU4JELb-NdJwacP7EBYDP3KkQgY6Se6uhw&svctype=4&tempid=h5_group_info)** · **[QQ 频道](https://pd.qq.com/s/bceanzrgg?b=9)** · **[Telegram 频道](https://t.me/tbox_Sign)** · **[Telegram 交流群](https://t.me/tbox798)**
+[![加入 QQ 群](https://img.shields.io/badge/QQ-%E7%BE%A4%E8%81%8A-12B7F5?style=for-the-badge&logo=qq&logoColor=white)](https://qun.qq.com/universal-share/share?ac=1&authKey=Pifbfqrq5x%2FgEZmQNlaU8DbgJyQeJga5hu9gaZTONxOIWgG7jaXr%2FMgydVWuzynv&busi_data=eyJncm91cENvZGUiOiI5NjIzMzc1MjMiLCJ0b2tlbiI6InlaUno4LzJvY2VBWXpEMVE1aXBlb082MTVlTFB1VUhlaitnQW5aYlhJaW1kM25VYUNBc0gvS0hhSFlIMGZPcEIiLCJ1aW4iOiIzMTIwNjE1NDM2In0%3D&data=0jUZUSdflWEWXWmg6l4vwK1HxgDpDhjqGumH32eKbuZ-X-ZyixgBbU4JELb-NdJwacP7EBYDP3KkQgY6Se6uhw&svctype=4&tempid=h5_group_info)
+[![加入 QQ 频道](https://img.shields.io/badge/QQ-%E9%A2%91%E9%81%93-5865F2?style=for-the-badge&logo=qq&logoColor=white)](https://pd.qq.com/s/bceanzrgg?b=9)
+[![Telegram 频道](https://img.shields.io/badge/Telegram-%E9%A2%91%E9%81%93-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox_Sign)
+[![Telegram 交流群](https://img.shields.io/badge/Telegram-%E4%BA%A4%E6%B5%81%E7%BE%A4-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox798)
 
 [自动更新](docs/auto-update.md) · [功能清单](docs/features.md) · [快速上手](docs/getting-started.md) · [常见问题](docs/faq.md) · [版本演进](docs/changelog.md)
 
