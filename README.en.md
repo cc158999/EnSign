@@ -74,7 +74,7 @@ Among comparable signing tools, auto update is one of the few real dividing line
 | **Signing** | Zsign-powered local re-signing with p12 + provisioning profile, ad-hoc, or modify-only; outputs IPA / TIPA |
 | **App editing** | Change display name, bundle ID, version, icon; key-level Info.plist editing; app cloning |
 | **Tweak injection** | Inject dylib / deb / framework; jailbreak dependencies rewritten to ElleKit; unresolved ones downgraded to weak links |
-| **Certificates** | Import p12, provisioning profiles and encrypted bundles; revocation & expiry checks; cloud restore; URL-scheme import |
+| **Certificates** | Import p12, provisioning profiles and ZIP certificate bundles; revocation & expiry checks; cloud restore; URL-scheme import |
 | **Library** | Signed / unsigned tabs, bulk import and delete, on-device HTTPS install server, QR-code install |
 | **Sources** | AltStore / ESign repo formats, plus **unencrypted 全能签 (QuanNengQian) sources**; news, filtering, search, offline cache |
 | **Files** | Full file browser, multi-format extraction, wireless transfer from a desktop browser, built-in downloader |
@@ -116,7 +116,7 @@ More in [screenshots/](screenshots/)
 ## Getting started
 
 1. **Install EnSIgn** — install directly from [online signing](https://www.enqapp.com/install), or grab the [unsigned IPA](https://pan.enqapp.com/) and sign it yourself
-2. **Import a certificate** — Settings → Certificates, pick your p12 + provisioning profile (or just open an `.ESignCert` bundle)
+2. **Import a certificate** — Settings → Certificates, pick your p12 + provisioning profile or import a ZIP certificate bundle
 3. **Get a package** — download from a source, grab it with the built-in downloader, or "Copy to EnSIgn" from another app
 4. **Sign** — pick the unsigned package in Library → Sign → adjust app info and tweaks → start
 5. **Install** — installation is offered automatically when signing finishes, or install later from the signed list / via QR code on another device

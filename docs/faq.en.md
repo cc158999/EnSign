@@ -29,7 +29,7 @@ There's no formal relationship. EnSIgn's design takes its cues from it: file imp
 Yes. Alongside the AltStore / ESign formats, EnSIgn supports **全能签 (QuanNengQian) sources in their unencrypted format**, so your source list carries over as-is.
 
 **What should I prepare before migrating?**
-Three things, ideally ahead of time: your **certificates** (p12 + profile, or an `.ESignCert` bundle), your **frequently used IPA files**, and your **source URLs**. Waiting until the old tool expires makes for a rushed switch.
+Three things, ideally ahead of time: your **certificates** (p12 + profile), your **frequently used IPA files**, and your **source URLs**. Waiting until the old tool expires makes for a rushed switch.
 
 ---
 
@@ -53,14 +53,14 @@ Install directly from [www.enqapp.com/install](https://www.enqapp.com/install), 
 
 **My certificate won't import, or it says duplicate.**
 - It only counts as a duplicate when **both** the certificate and the profile match. If you genuinely replaced one half, re-select both files
-- A p12 prompts for its password; an `.ESignCert` bundle carries its own — don't type one
+- A p12 prompts for its original password when needed
 - The import path rejects IPAs and oversized archives, so don't pick a package by mistake
 
 **How do I know a certificate still works?**
 The certificate list shows expiry date, days remaining and revocation status, and revocation can be re-checked on demand. **A package signed with a revoked certificate installs fine but crashes on launch.**
 
 **I lost my certificates after reinstalling.**
-Use cloud restore to recover previously used certificates, or simply re-open your `.ESignCert` bundle.
+Use cloud restore to recover previously used certificates, or re-import the p12 and provisioning profile.
 
 **Are shared certificates good enough?**
 Fine for trying things out, not for the long run. Shared certificates tend to be less stable — expiry, revocation and device mismatches happen. For sustained use, get a personal developer certificate or a dedicated P12.

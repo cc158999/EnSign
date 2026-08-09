@@ -9,7 +9,7 @@ From nothing to your first signed app on the home screen.
 ## Step 0: What you need
 
 - An iOS / iPadOS device on **16.0 or later**, **iPhone 8 or newer**, or an iPad (no jailbreak)
-- A valid signing certificate — a p12 file plus a mobileprovision profile, or an `.ESignCert` bundle from a certificate vendor
+- A valid signing certificate — a p12 file plus a mobileprovision profile
 - The package you want to install (IPA / TIPA), or a source you can download it from
 
 Two ways to install EnSIgn itself:
@@ -30,7 +30,6 @@ Two ways to install EnSIgn itself:
 Go to **Settings → Certificates** and tap `+`. Several ways in:
 
 - **Pick files** — opens the system file picker; select the p12 and the profile, and enter the password when prompted
-- **Open an `.ESignCert`** — these bundles carry their own password; open one from the Files app and choose EnSIgn
 - **Archive** — if it contains several certificates you get to pick one
 - **One-tap from the web** — vendors supporting `enq-app://` can push a certificate straight in
 - **Cloud restore** — recover a previously used certificate after a reinstall or new device

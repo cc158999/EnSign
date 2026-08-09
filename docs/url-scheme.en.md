@@ -52,15 +52,7 @@ As with the source action, keep the complete literal `https://` URL.
 
 `enq-app://import-certificate` lets a certificate service hand a certificate to EnSIgn. After the user taps the link, EnSIgn shows the source and waits for confirmation before downloading or importing anything.
 
-### Recommended: an `.ESignCert` bundle
-
-```text
-enq-app://import-certificate?url=https%3A%2F%2Fexample.com%2Fcertificate.ESignCert
-```
-
-`.ESignCert` is an encrypted certificate bundle supported by EnSIgn. It already carries the required information, so no certificate password needs to appear in the link. This is the preferred format for public web integrations.
-
-### A ZIP bundle
+### Recommended: a ZIP bundle
 
 The ZIP must contain both a `.p12` and a `.mobileprovision`; they may be inside subdirectories:
 
@@ -88,10 +80,10 @@ Use Base64 only as a compatibility fallback for small files. Safari, messaging a
 
 | Parameter | Required | Description |
 | --- | --- | --- |
-| `url` | Either this or `p12` | HTTP(S) URL for an `.ESignCert` or ZIP bundle |
+| `url` | Either this or `p12` | HTTP(S) URL for a ZIP bundle |
 | `p12` | Either this or `url` | A `.p12` URL or Base64 content |
 | `mobileprovision` | Required with `p12` | A provisioning-profile URL or Base64 content; alias: `provision` |
-| `password` | Depends on the file | The p12 password, not Base64; unnecessary for `.ESignCert` |
+| `password` | Depends on the file | The p12 password, not Base64; required for a ZIP bundle |
 | `name` | No | A display name for the imported certificate |
 | `default` | No | Use `1`, `true` or `yes` to make it the default certificate |
 
@@ -102,8 +94,9 @@ If `url` and separate-file parameters are both present, EnSIgn uses `url`.
 Certificate import uses query parameters, so **every parameter value must be percent-encoded**:
 
 ```javascript
-const bundleURL = "https://example.com/certificate.ESignCert";
-const schemeURL = `enq-app://import-certificate?url=${encodeURIComponent(bundleURL)}`;
+const bundleURL = "https://example.com/certificate.zip";
+const password = "YOUR_PASSWORD";
+const schemeURL = `enq-app://import-certificate?url=${encodeURIComponent(bundleURL)}&password=${encodeURIComponent(password)}`;
 
 document.querySelector("#import-certificate").addEventListener("click", () => {
   window.location.href = schemeURL;
@@ -129,9 +122,9 @@ Remote imports require the user to have accepted EnSIgn's privacy policy. If a p
 
 ### Server recommendations
 
-- Prefer `.ESignCert` so a password never appears in the URL, browser history or access logs
 - Use a one-time download token with a short expiry, invalidated after use
 - Use HTTPS and return the correct filename and extension
+- To keep the password out of the URL, use separate file URLs and let the user enter the password in the app
 - Keep remote files below 8 MB and decoded inline Base64 below 4 MB
 - Never write certificates, passwords or complete import links to public logs
 

@@ -96,7 +96,6 @@ Details and privacy boundaries: **[Auto update](auto-update.en.md)**.
 
 - **Import paths**:
   - p12 + mobileprovision pair
-  - `.ESignCert` encrypted bundle (password included — just open it)
   - Bulk import from an archive, with a picker when it contains several certificates
   - **URL scheme import** (`enq-app://`) for certificate vendors to push a certificate from a web page. The app can also copy an integration spec for an AI assistant, so vendors can wire up the flow without reading docs
 - **Deduplication**: only counts as a duplicate when both the certificate and the profile match; duplicates are rejected
@@ -187,7 +186,7 @@ Details and privacy boundaries: **[Auto update](auto-update.en.md)**.
 ## 10. System integration
 
 - **Live Activities**: signing and download progress on the Dynamic Island and Lock Screen, with quick install or sign actions when a task finishes
-- **"Open in" import**: share IPA / TIPA / ZIP / DEB / dylib / framework / p12 / provisioning profile / `.ESignCert` into EnSIgn from any app's share sheet
+- **"Open in" import**: share IPA / TIPA / ZIP / DEB / dylib / framework / p12 / provisioning profile into EnSIgn from any app's share sheet
 - **URL scheme**: `enq-app://` supports adding sources, downloading resources and one-tap certificate import; see the [URL Scheme guide](url-scheme.en.md) for formats and examples
 - **Background execution**: registered per task and released when a task stalls — it never squats in the background
 - **OS compatibility**: iOS 16 through the latest release, with a fallback path for every newer API

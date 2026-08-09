@@ -52,15 +52,7 @@ enq-app://install/https://example.com/MyApp.ipa
 
 `enq-app://import-certificate` 可以让证书服务页面把证书直接交给易能签。用户点击后，易能签会显示来源确认，用户同意后才会下载和导入。
 
-### 推荐：导入 `.ESignCert` 整包
-
-```text
-enq-app://import-certificate?url=https%3A%2F%2Fexample.com%2Fcertificate.ESignCert
-```
-
-`.ESignCert` 是易能签支持的加密证书包，包内已经包含所需信息，因此链接中不需要放证书密码。这是公开网页接入时最推荐的方式。
-
-### 导入 ZIP 整包
+### 推荐：导入 ZIP 整包
 
 ZIP 中需要同时包含 `.p12` 与 `.mobileprovision`，文件可以位于子目录：
 
@@ -88,10 +80,10 @@ Base64 只适合作为小文件兼容方案。长链接很容易被 Safari、微
 
 | 参数 | 必填 | 说明 |
 | --- | --- | --- |
-| `url` | 与 `p12` 二选一 | `.ESignCert` 或 ZIP 整包的 HTTP(S) 地址 |
+| `url` | 与 `p12` 二选一 | ZIP 整包的 HTTP(S) 地址 |
 | `p12` | 与 `url` 二选一 | `.p12` 地址或 Base64 内容 |
 | `mobileprovision` | 使用 `p12` 时必填 | 描述文件地址或 Base64 内容；别名为 `provision` |
-| `password` | 视文件而定 | p12 密码；不是 Base64。`.ESignCert` 不需要 |
+| `password` | 视文件而定 | p12 密码；不是 Base64。ZIP 整包需要提供 |
 | `name` | 否 | 导入后的证书备注名 |
 | `default` | 否 | 使用 `1`、`true` 或 `yes` 将其设为默认证书 |
 
@@ -102,8 +94,9 @@ Base64 只适合作为小文件兼容方案。长链接很容易被 Safari、微
 证书导入使用查询参数，所以**每个参数值都必须进行百分号编码**。例如：
 
 ```javascript
-const bundleURL = "https://example.com/certificate.ESignCert";
-const schemeURL = `enq-app://import-certificate?url=${encodeURIComponent(bundleURL)}`;
+const bundleURL = "https://example.com/certificate.zip";
+const password = "YOUR_PASSWORD";
+const schemeURL = `enq-app://import-certificate?url=${encodeURIComponent(bundleURL)}&password=${encodeURIComponent(password)}`;
 
 document.querySelector("#import-certificate").addEventListener("click", () => {
   window.location.href = schemeURL;
@@ -129,9 +122,9 @@ document.querySelector("#import-certificate").addEventListener("click", () => {
 
 ### 服务端建议
 
-- 优先提供 `.ESignCert`，避免密码出现在 URL、浏览器历史或访问日志中
 - 下载地址使用一次性令牌和较短有效期，用完后立即失效
 - 使用 HTTPS，并返回正确的文件名与扩展名
+- 如果不希望密码进入 URL，使用分离文件形式并让用户在 App 内补录密码
 - 远程文件应小于 8 MB；内嵌 Base64 解码后应小于 4 MB
 - 不要把证书、密码或完整导入链接写入公开日志
 
