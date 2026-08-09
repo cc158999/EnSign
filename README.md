@@ -10,7 +10,7 @@
 简体中文 · [English](README.en.md)
 
 ![平台](https://img.shields.io/badge/平台-iOS%2016.0%2B-black)
-![版本](https://img.shields.io/badge/版本-2.1.3-blue)
+![版本](https://img.shields.io/badge/版本-2.1.5-blue)
 ![语言](https://img.shields.io/badge/语言-简体中文%20%7C%20繁體中文%20%7C%20English%20%7C%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-green)
 
 **📦 未签名原包** → [pan.enqapp.com](https://pan.enqapp.com/)<br>

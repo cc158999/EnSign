@@ -51,6 +51,10 @@ Details and privacy boundaries: **[Auto update](auto-update.en.md)**.
 - Produce several copies in one pass, each with its own bundle identifier
 - Clones live on the home screen alongside the original app
 
+### Data security
+
+- Optional Keychain Isolation gives signed apps separate keychain access groups, reducing data access between sideloaded apps
+
 ### Signing log
 
 - Structured, stage-by-stage log (read package → edit config → inject → sign → package)
@@ -182,7 +186,7 @@ Details and privacy boundaries: **[Auto update](auto-update.en.md)**.
 
 ## 10. System integration
 
-- **Live Activities**: signing and download progress on the Dynamic Island and Lock Screen, including a completion state; updates are throttled so they never flood or exceed the budget
+- **Live Activities**: signing and download progress on the Dynamic Island and Lock Screen, with quick install or sign actions when a task finishes
 - **"Open in" import**: share IPA / TIPA / ZIP / DEB / dylib / framework / p12 / provisioning profile / `.ESignCert` into EnSIgn from any app's share sheet
 - **URL scheme**: `enq-app://`, used for certificate import and UDID callbacks
 - **Background execution**: registered per task and released when a task stalls — it never squats in the background

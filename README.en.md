@@ -10,7 +10,7 @@
 [简体中文](README.md) · English
 
 ![Platform](https://img.shields.io/badge/platform-iOS%2016.0%2B-black)
-![Version](https://img.shields.io/badge/version-2.1.3-blue)
+![Version](https://img.shields.io/badge/version-2.1.5-blue)
 ![Languages](https://img.shields.io/badge/UI-简体中文%20%7C%20繁體中文%20%7C%20English%20%7C%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-green)
 
 **📦 Unsigned IPA** → [pan.enqapp.com](https://pan.enqapp.com/)<br>

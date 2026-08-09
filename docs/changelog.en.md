@@ -2,7 +2,7 @@
 
 [← Back to home](../README.en.md) · [简体中文](changelog.md)
 
-Milestones by development phase rather than a commit-by-commit log. Current version: **2.1.3**.
+Milestones by development phase rather than a commit-by-commit log. Current version: **2.1.5**.
 
 ---
 
@@ -60,6 +60,15 @@ This phase turned a general-purpose upstream tool into a complete signing app fo
 ---
 
 ## 2.1.x (late July 2026 onwards)
+
+### 2.1.5 (August 2026)
+
+- Added Keychain Isolation to improve data security for signed apps
+- Improved Dynamic Island and Lock Screen Live Activities with quick install or sign actions when a task finishes
+- Fixed completion actions that did not open the expected screen
+- Improved the reliability of file downloads while the app is in the background
+- Renamed the Search entry to Sources and streamlined source navigation, layout and setup
+- Refined icons, button labels and translations
 
 **Productisation**
 - The display name became **EnSIgn**, with InfoPlist localisation completed
