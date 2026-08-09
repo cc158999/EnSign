@@ -23,7 +23,7 @@
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox_Sign)
 [![Telegram Group](https://img.shields.io/badge/Telegram-Group-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox798)
 
-[Auto update](docs/auto-update.en.md) · [Features](docs/features.en.md) · [Getting started](docs/getting-started.en.md) · [FAQ](docs/faq.en.md) · [Changelog](docs/changelog.en.md)
+[Auto update](docs/auto-update.en.md) · [Features](docs/features.en.md) · [URL Scheme](docs/url-scheme.en.md) · [Getting started](docs/getting-started.en.md) · [FAQ](docs/faq.en.md) · [Changelog](docs/changelog.en.md)
 
 </div>
 
@@ -159,6 +159,7 @@ Azure · Amethyst · Jade · Amber
 
 - [Auto update](docs/auto-update.en.md) — the headline feature: how it works and where the privacy boundary sits
 - [Feature list](docs/features.en.md) — every module, spelled out
+- [URL Scheme guide](docs/url-scheme.en.md) — add sources, download resources and import certificates in one tap
 - [Getting started](docs/getting-started.en.md) — from zero to your first installed app
 - [FAQ](docs/faq.en.md) — signing failures, install errors, crashes
 - [Release history](docs/changelog.en.md) — what changed from 1.x to 2.1.x
@@ -176,7 +177,7 @@ Azure · Amethyst · Jade · Amber
 
 ## For developers and certificate vendors
 
-EnSIgn exposes a one-tap **certificate import** interface (URL scheme `enq-app://`). Integration notes live in the app under **Settings → About → URL Scheme**, where you can also copy a complete AI integration spec and let an assistant write the integration for you.
+EnSIgn exposes a one-tap **certificate import** interface (URL scheme `enq-app://`). See the **[URL Scheme guide](docs/url-scheme.en.md)** for formats, parameters and a web example. The in-app page under **Settings → About → URL Scheme** can also copy a complete AI integration spec for an assistant to generate the integration code.
 
 ---
 

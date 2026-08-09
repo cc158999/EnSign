@@ -23,7 +23,7 @@
 [![Telegram 频道](https://img.shields.io/badge/Telegram-%E9%A2%91%E9%81%93-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox_Sign)
 [![Telegram 交流群](https://img.shields.io/badge/Telegram-%E4%BA%A4%E6%B5%81%E7%BE%A4-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/tbox798)
 
-[自动更新](docs/auto-update.md) · [功能清单](docs/features.md) · [快速上手](docs/getting-started.md) · [常见问题](docs/faq.md) · [版本演进](docs/changelog.md)
+[自动更新](docs/auto-update.md) · [功能清单](docs/features.md) · [URL Scheme](docs/url-scheme.md) · [快速上手](docs/getting-started.md) · [常见问题](docs/faq.md) · [版本演进](docs/changelog.md)
 
 </div>
 
@@ -157,6 +157,7 @@
 
 - [自动更新说明](docs/auto-update.md) —— 重点功能，它怎么工作、隐私边界在哪
 - [完整功能清单](docs/features.md) —— 每个模块能做什么，逐条列清楚
+- [URL Scheme 使用指南](docs/url-scheme.md) —— 添加软件源、下载资源与一键导入证书
 - [快速上手指南](docs/getting-started.md) —— 从零到装上第一个 App
 - [常见问题](docs/faq.md) —— 签名失败、装不上、闪退怎么排查
 - [版本演进](docs/changelog.md) —— 从 1.x 到 2.1.x 都做了什么
@@ -174,7 +175,7 @@
 
 ## 给开发者 / 证书商
 
-易能签开放了**一键把证书导入 App** 的接口（URL Scheme `enq-app://`）。接入说明在 App 内 **设置 → 关于我们 → URL Scheme**，那一页还能一键「复制 AI 对接文档」，把完整规范交给 AI 帮你写接入代码。
+易能签开放了**一键把证书导入 App** 的接口（URL Scheme `enq-app://`）。完整格式、参数和网页示例见 **[URL Scheme 使用指南](docs/url-scheme.md)**；App 内 **设置 → 关于我们 → URL Scheme** 还可以一键「复制 AI 对接文档」，把完整规范交给 AI 帮你写接入代码。
 
 ---
 
