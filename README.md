@@ -16,6 +16,10 @@
 **📦 未签名原包** → [pan.enqapp.com](https://pan.enqapp.com/)<br>
 **🚀 在线签名安装** → [www.enqapp.com/install](https://www.enqapp.com/install)
 
+### 加入社区
+
+**[QQ 群](https://qun.qq.com/universal-share/share?ac=1&authKey=Pifbfqrq5x%2FgEZmQNlaU8DbgJyQeJga5hu9gaZTONxOIWgG7jaXr%2FMgydVWuzynv&busi_data=eyJncm91cENvZGUiOiI5NjIzMzc1MjMiLCJ0b2tlbiI6InlaUno4LzJvY2VBWXpEMVE1aXBlb082MTVlTFB1VUhlaitnQW5aYlhJaW1kM25VYUNBc0gvS0hhSFlIMGZPcEIiLCJ1aW4iOiIzMTIwNjE1NDM2In0%3D&data=0jUZUSdflWEWXWmg6l4vwK1HxgDpDhjqGumH32eKbuZ-X-ZyixgBbU4JELb-NdJwacP7EBYDP3KkQgY6Se6uhw&svctype=4&tempid=h5_group_info)** · **[QQ 频道](https://pd.qq.com/s/bceanzrgg?b=9)** · **[Telegram 频道](https://t.me/tbox_Sign)** · **[Telegram 交流群](https://t.me/tbox798)**
+
 [自动更新](docs/auto-update.md) · [功能清单](docs/features.md) · [快速上手](docs/getting-started.md) · [常见问题](docs/faq.md) · [版本演进](docs/changelog.md)
 
 </div>
